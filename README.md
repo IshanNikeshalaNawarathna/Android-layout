@@ -185,6 +185,19 @@ Android layouts are used to define the user interface of an application. They de
    ```
    ![image](https://github.com/user-attachments/assets/dd91abb3-07e5-420d-a645-5b24f1b800b8)
 
+## Practical Examples
 
+   ```Java
+        Button button14 = findViewById(R.id.button14);
+        button14.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                LinearLayout linearLayout = findViewById(R.id.linearLayout);
+                View view1 = getLayoutInflater().inflate(R.layout.exmpleproject, null);
+                linearLayout.addView(view1);
+            }
+        });
+   ```
+![image](https://github.com/user-attachments/assets/b67c54d5-6c07-4ade-bf69-642412ddd568)
  ---
 Happy coding! 🎉
